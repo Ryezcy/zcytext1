@@ -1,0 +1,435 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Standard]
+
+==============================================================================
+
+Section Cross References
+
+    system_mk20d5.o(.text) refers to system_mk20d5.o(.data) for SystemCoreClock
+    startup_mk20d5.o(RESET) refers to startup_mk20d5.o(STACK) for __initial_sp
+    startup_mk20d5.o(RESET) refers to startup_mk20d5.o(.text) for Reset_Handler
+    startup_mk20d5.o(RESET) refers to kinetis_it.o(.text) for SysTick_Handler
+    startup_mk20d5.o(RESET) refers to pit.o(.text) for PIT0_IRQHandler
+    startup_mk20d5.o(.text) refers to system_mk20d5.o(.text) for SystemInit
+    startup_mk20d5.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    gpio.o(.text) refers to gpio.o(.constdata) for SIM_GPIOClockGateTable
+    gpio.o(.text) refers to gpio.o(.bss) for GPIO_CallBackTable
+    systick.o(.text) refers to system_mk20d5.o(.text) for SystemCoreClockUpdate
+    systick.o(.text) refers to system_mk20d5.o(.data) for SystemCoreClock
+    systick.o(.text) refers to systick.o(.data) for TimingDelay
+    ftm.o(.text) refers to system_mk20d5.o(.data) for PeriphBusClock
+    pit.o(.text) refers to system_mk20d5.o(.data) for PeriphBusClock
+    pit.o(.text) refers to pit.o(.data) for fac_us
+    pit.o(.text) refers to pit.o(.constdata) for PIT_IRQnTable
+    pit.o(.text) refers to pit.o(.bss) for PIT_CallBackTable
+    main.o(.text) refers to gpio.o(.text) for GPIO_Configuration
+    main.o(.text) refers to systick.o(.text) for Systick_Initial
+    main.o(.text) refers to pit.o(.text) for PIT_QuickInit
+    main.o(.text) refers to ftm.o(.text) for FTM_PWM_init
+    main.o(.text) refers to exti.o(.text) for exti_init
+    main.o(.text) refers to main.o(.data) for led_dt
+    main.o(.text) refers to kinetis_it.o(.data) for trig_1
+    kinetis_it.o(.text) refers to systick.o(.text) for TimingDelay_Decrement
+    kinetis_it.o(.text) refers to gpio.o(.text) for GPIO_Toggle
+    kinetis_it.o(.text) refers to pit.o(.text) for PIT_GetCounterValue
+    kinetis_it.o(.text) refers to kinetis_it.o(.data) for a_start
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_mk20d5.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_mk20d5.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing system_mk20d5.o(.rev16_text), (4 bytes).
+    Removing system_mk20d5.o(.revsh_text), (4 bytes).
+    Removing startup_mk20d5.o(HEAP), (0 bytes).
+    Removing uart.o(.rev16_text), (4 bytes).
+    Removing uart.o(.revsh_text), (4 bytes).
+    Removing uart.o(.text), (228 bytes).
+    Removing gpio.o(.rev16_text), (4 bytes).
+    Removing gpio.o(.revsh_text), (4 bytes).
+    Removing systick.o(.rev16_text), (4 bytes).
+    Removing systick.o(.revsh_text), (4 bytes).
+    Removing exti.o(.rev16_text), (4 bytes).
+    Removing exti.o(.revsh_text), (4 bytes).
+    Removing ftm.o(.rev16_text), (4 bytes).
+    Removing ftm.o(.revsh_text), (4 bytes).
+    Removing pit.o(.rev16_text), (4 bytes).
+    Removing pit.o(.revsh_text), (4 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing kinetis_it.o(.rev16_text), (4 bytes).
+    Removing kinetis_it.o(.revsh_text), (4 bytes).
+
+20 unused section(s) (total 300 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section     1024  startup_mk20d5.o(RESET)
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ..\Drivers\FTM.c                         0x00000000   Number         0  ftm.o ABSOLUTE
+    ..\Drivers\exti.c                        0x00000000   Number         0  exti.o ABSOLUTE
+    ..\Drivers\gpio.c                        0x00000000   Number         0  gpio.o ABSOLUTE
+    ..\Drivers\pit.c                         0x00000000   Number         0  pit.o ABSOLUTE
+    ..\Drivers\systick.c                     0x00000000   Number         0  systick.o ABSOLUTE
+    ..\Drivers\uart.c                        0x00000000   Number         0  uart.o ABSOLUTE
+    ..\Startup\startup_MK20D5.s              0x00000000   Number         0  startup_mk20d5.o ABSOLUTE
+    ..\Startup\system_MK20D5.c               0x00000000   Number         0  system_mk20d5.o ABSOLUTE
+    ..\Users\kinetis_it.c                    0x00000000   Number         0  kinetis_it.o ABSOLUTE
+    ..\Users\main.c                          0x00000000   Number         0  main.o ABSOLUTE
+    ..\\Drivers\\FTM.c                       0x00000000   Number         0  ftm.o ABSOLUTE
+    ..\\Drivers\\exti.c                      0x00000000   Number         0  exti.o ABSOLUTE
+    ..\\Drivers\\gpio.c                      0x00000000   Number         0  gpio.o ABSOLUTE
+    ..\\Drivers\\pit.c                       0x00000000   Number         0  pit.o ABSOLUTE
+    ..\\Drivers\\systick.c                   0x00000000   Number         0  systick.o ABSOLUTE
+    ..\\Drivers\\uart.c                      0x00000000   Number         0  uart.o ABSOLUTE
+    ..\\Startup\\system_MK20D5.c             0x00000000   Number         0  system_mk20d5.o ABSOLUTE
+    ..\\Users\\kinetis_it.c                  0x00000000   Number         0  kinetis_it.o ABSOLUTE
+    ..\\Users\\main.c                        0x00000000   Number         0  main.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    .ARM.__at_0x400                          0x00000400   Section       16  startup_mk20d5.o(.ARM.__at_0x400)
+    .ARM.Collect$$$$00000000                 0x00000410   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000410   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000414   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000418   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000418   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000418   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x00000420   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000420   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000420   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x00000420   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x00000424   Section        0  system_mk20d5.o(.text)
+    .text                                    0x0000064c   Section       36  startup_mk20d5.o(.text)
+    .text                                    0x00000670   Section        0  gpio.o(.text)
+    NVIC_EnableIRQ                           0x00000c0d   Thumb Code    24  gpio.o(.text)
+    .text                                    0x00000c3c   Section        0  systick.o(.text)
+    .text                                    0x00000d68   Section        0  exti.o(.text)
+    NVIC_SetPriority                         0x00000d69   Thumb Code    32  exti.o(.text)
+    NVIC_EnableIRQ                           0x00000ee7   Thumb Code    24  exti.o(.text)
+    NVIC_ClearPendingIRQ                     0x00000eff   Thumb Code    18  exti.o(.text)
+    .text                                    0x00000f30   Section        0  ftm.o(.text)
+    .text                                    0x0000127c   Section        0  pit.o(.text)
+    PIT_IRQHandler                           0x000013a9   Thumb Code    42  pit.o(.text)
+    .text                                    0x0000141c   Section        0  main.o(.text)
+    .text                                    0x0000158c   Section        0  kinetis_it.o(.text)
+    .text                                    0x00001698   Section       36  init.o(.text)
+    i.__scatterload_copy                     0x000016bc   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x000016ca   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x000016cc   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .constdata                               0x000016dc   Section       65  gpio.o(.constdata)
+    GPIO_InstanceTable                       0x000016dc   Data          20  gpio.o(.constdata)
+    PORT_InstanceTable                       0x000016f0   Data          20  gpio.o(.constdata)
+    SIM_GPIOClockGateTable                   0x00001704   Data          20  gpio.o(.constdata)
+    GPIO_IRQnTable                           0x00001718   Data           5  gpio.o(.constdata)
+    .constdata                               0x0000171d   Section        4  pit.o(.constdata)
+    PIT_IRQnTable                            0x0000171d   Data           4  pit.o(.constdata)
+    .data                                    0x1fffe000   Section       12  system_mk20d5.o(.data)
+    .data                                    0x1fffe00c   Section        8  systick.o(.data)
+    TimingDelay                              0x1fffe00c   Data           4  systick.o(.data)
+    .data                                    0x1fffe014   Section        4  pit.o(.data)
+    fac_us                                   0x1fffe014   Data           4  pit.o(.data)
+    .data                                    0x1fffe018   Section        4  main.o(.data)
+    .data                                    0x1fffe01c   Section       16  kinetis_it.o(.data)
+    .bss                                     0x1fffe02c   Section       20  gpio.o(.bss)
+    GPIO_CallBackTable                       0x1fffe02c   Data          20  gpio.o(.bss)
+    .bss                                     0x1fffe040   Section       16  pit.o(.bss)
+    PIT_CallBackTable                        0x1fffe040   Data          16  pit.o(.bss)
+    STACK                                    0x1fffe050   Section     1024  startup_mk20d5.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_mk20d5.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x00000400   Data           0  startup_mk20d5.o(RESET)
+    __Vectors_Size                           0x00000400   Number         0  startup_mk20d5.o ABSOLUTE
+    __main                                   0x00000411   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000411   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000415   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000419   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000419   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000419   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000419   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000421   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000421   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    SystemInit                               0x00000425   Thumb Code   158  system_mk20d5.o(.text)
+    SystemCoreClockUpdate                    0x000004c3   Thumb Code   356  system_mk20d5.o(.text)
+    Reset_Handler                            0x0000064d   Thumb Code     8  startup_mk20d5.o(.text)
+    NMI_Handler                              0x00000655   Thumb Code     2  startup_mk20d5.o(.text)
+    HardFault_Handler                        0x00000657   Thumb Code     2  startup_mk20d5.o(.text)
+    MemManage_Handler                        0x00000659   Thumb Code     2  startup_mk20d5.o(.text)
+    BusFault_Handler                         0x0000065b   Thumb Code     2  startup_mk20d5.o(.text)
+    UsageFault_Handler                       0x0000065d   Thumb Code     2  startup_mk20d5.o(.text)
+    SVC_Handler                              0x0000065f   Thumb Code     2  startup_mk20d5.o(.text)
+    DebugMon_Handler                         0x00000661   Thumb Code     2  startup_mk20d5.o(.text)
+    PendSV_Handler                           0x00000663   Thumb Code     2  startup_mk20d5.o(.text)
+    ADC0_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    CMP0_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    CMP1_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    CMT_IRQHandler                           0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    DMA0_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    DMA1_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    DMA2_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    DMA3_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    DMA_Error_IRQHandler                     0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    DefaultISR                               0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    FTFL_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    FTM0_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    FTM1_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    I2C0_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    I2S0_Rx_IRQHandler                       0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    I2S0_Tx_IRQHandler                       0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    LLW_IRQHandler                           0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    LPTimer_IRQHandler                       0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    LVD_LVW_IRQHandler                       0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    MCG_IRQHandler                           0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    PDB0_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    PORTA_IRQHandler                         0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    PORTC_IRQHandler                         0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    RTC_IRQHandler                           0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    RTC_Seconds_IRQHandler                   0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    Read_Collision_IRQHandler                0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    Reserved21_IRQHandler                    0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    SPI0_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    SWI_IRQHandler                           0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    TSI0_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    UART0_ERR_IRQHandler                     0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    UART0_LON_IRQHandler                     0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    UART0_RX_TX_IRQHandler                   0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    UART1_ERR_IRQHandler                     0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    UART1_RX_TX_IRQHandler                   0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    UART2_ERR_IRQHandler                     0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    UART2_RX_TX_IRQHandler                   0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    USB0_IRQHandler                          0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    USBDCD_IRQHandler                        0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    Watchdog_IRQHandler                      0x00000667   Thumb Code     0  startup_mk20d5.o(.text)
+    GPIO_Configuration                       0x00000671   Thumb Code   196  gpio.o(.text)
+    GPIO_Reset                               0x00000735   Thumb Code    12  gpio.o(.text)
+    GPIO_Set                                 0x00000741   Thumb Code    12  gpio.o(.text)
+    GPIO_Toggle                              0x0000074d   Thumb Code    12  gpio.o(.text)
+    Read_InputDataBit                        0x00000759   Thumb Code    52  gpio.o(.text)
+    GPIO_PinConfig                           0x0000078d   Thumb Code    70  gpio.o(.text)
+    GPIO_WriteBit                            0x000007d3   Thumb Code    68  gpio.o(.text)
+    GPIO_ReadBit                             0x00000817   Thumb Code    50  gpio.o(.text)
+    PORT_PinMuxConfig                        0x00000849   Thumb Code    74  gpio.o(.text)
+    PORT_PinOpenDrainConfig                  0x00000893   Thumb Code    72  gpio.o(.text)
+    PORT_PinPullConfig                       0x000008db   Thumb Code   162  gpio.o(.text)
+    GPIO_Init                                0x0000097d   Thumb Code   196  gpio.o(.text)
+    GPIO_QuickInit                           0x00000a41   Thumb Code    80  gpio.o(.text)
+    GPIO_CallbackInstall                     0x00000a91   Thumb Code    26  gpio.o(.text)
+    GPIO_ITDMAConfig                         0x00000aab   Thumb Code   354  gpio.o(.text)
+    Systick_Initial                          0x00000c3d   Thumb Code    96  systick.o(.text)
+    Delay_10us                               0x00000c9d   Thumb Code    16  systick.o(.text)
+    DWT_DelayUs                              0x00000cad   Thumb Code    62  systick.o(.text)
+    DelayUs                                  0x00000ceb   Thumb Code    12  systick.o(.text)
+    Delay_ms                                 0x00000cf7   Thumb Code    16  systick.o(.text)
+    TimingDelay_Decrement                    0x00000d07   Thumb Code    18  systick.o(.text)
+    SysTick_ISR                              0x00000d19   Thumb Code    26  systick.o(.text)
+    Systick_GetRunTime                       0x00000d33   Thumb Code    24  systick.o(.text)
+    exti_init                                0x00000d89   Thumb Code   266  exti.o(.text)
+    System_NVIC_Initial                      0x00000e93   Thumb Code    84  exti.o(.text)
+    FTM_PWM_init                             0x00000f31   Thumb Code   624  ftm.o(.text)
+    FTM_PWM_Duty                             0x000011a1   Thumb Code    80  ftm.o(.text)
+    FTM_PWM_freq                             0x000011f1   Thumb Code   112  ftm.o(.text)
+    PIT_Init                                 0x0000127d   Thumb Code    88  pit.o(.text)
+    PIT_QuickInit                            0x000012d5   Thumb Code    20  pit.o(.text)
+    PIT_ITDMAConfig                          0x000012e9   Thumb Code   116  pit.o(.text)
+    PIT_ResetCounter                         0x0000135d   Thumb Code    42  pit.o(.text)
+    PIT_GetCounterValue                      0x00001387   Thumb Code    12  pit.o(.text)
+    PIT_CallbackInstall                      0x00001393   Thumb Code    22  pit.o(.text)
+    PIT0_IRQHandler                          0x000013d3   Thumb Code    10  pit.o(.text)
+    PIT1_IRQHandler                          0x000013dd   Thumb Code    10  pit.o(.text)
+    PIT2_IRQHandler                          0x000013e7   Thumb Code    10  pit.o(.text)
+    PIT3_IRQHandler                          0x000013f1   Thumb Code    10  pit.o(.text)
+    HardwareInit                             0x0000141d   Thumb Code   128  main.o(.text)
+    main                                     0x0000149d   Thumb Code   204  main.o(.text)
+    SysTick_Handler                          0x0000158d   Thumb Code    20  kinetis_it.o(.text)
+    PORTB_IRQHandler                         0x000015a1   Thumb Code   162  kinetis_it.o(.text)
+    PORTD_IRQHandler                         0x00001643   Thumb Code    16  kinetis_it.o(.text)
+    PORTE_IRQHandler                         0x00001653   Thumb Code    16  kinetis_it.o(.text)
+    __scatterload                            0x00001699   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00001699   Thumb Code     0  init.o(.text)
+    __scatterload_copy                       0x000016bd   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x000016cb   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x000016cd   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x00001724   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001744   Number         0  anon$$obj.o(Region$$Table)
+    SystemCoreClock                          0x1fffe000   Data           4  system_mk20d5.o(.data)
+    PeriphBusClock                           0x1fffe004   Data           4  system_mk20d5.o(.data)
+    FlashClock                               0x1fffe008   Data           4  system_mk20d5.o(.data)
+    g_iRunTime                               0x1fffe010   Data           4  systick.o(.data)
+    led_dt                                   0x1fffe018   Data           4  main.o(.data)
+    a_start                                  0x1fffe01c   Data           4  kinetis_it.o(.data)
+    a_end                                    0x1fffe020   Data           4  kinetis_it.o(.data)
+    a_value                                  0x1fffe024   Data           4  kinetis_it.o(.data)
+    trig_1                                   0x1fffe028   Data           4  kinetis_it.o(.data)
+    __initial_sp                             0x1fffe450   Data           0  startup_mk20d5.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000411
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00001770, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00001744, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000400   Data   RO           51    RESET               startup_mk20d5.o
+    0x00000400   0x00000010   Code   RO           52    .ARM.__at_0x400     startup_mk20d5.o
+    0x00000410   0x00000000   Code   RO          310  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000410   0x00000004   Code   RO          313    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000414   0x00000004   Code   RO          316    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000418   0x00000000   Code   RO          318    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000418   0x00000000   Code   RO          320    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000418   0x00000008   Code   RO          321    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000420   0x00000000   Code   RO          323    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000420   0x00000000   Code   RO          325    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000420   0x00000004   Code   RO          314    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000424   0x00000228   Code   RO            3    .text               system_mk20d5.o
+    0x0000064c   0x00000024   Code   RO           53    .text               startup_mk20d5.o
+    0x00000670   0x000005cc   Code   RO           95    .text               gpio.o
+    0x00000c3c   0x0000012c   Code   RO          134    .text               systick.o
+    0x00000d68   0x000001c8   Code   RO          164    .text               exti.o
+    0x00000f30   0x0000034c   Code   RO          191    .text               ftm.o
+    0x0000127c   0x000001a0   Code   RO          218    .text               pit.o
+    0x0000141c   0x00000170   Code   RO          249    .text               main.o
+    0x0000158c   0x0000010c   Code   RO          279    .text               kinetis_it.o
+    0x00001698   0x00000024   Code   RO          327    .text               mc_w.l(init.o)
+    0x000016bc   0x0000000e   Code   RO          331    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x000016ca   0x00000002   Code   RO          332    i.__scatterload_null  mc_w.l(handlers.o)
+    0x000016cc   0x0000000e   Code   RO          333    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x000016da   0x00000002   PAD
+    0x000016dc   0x00000041   Data   RO           97    .constdata          gpio.o
+    0x0000171d   0x00000004   Data   RO          220    .constdata          pit.o
+    0x00001721   0x00000003   PAD
+    0x00001724   0x00000020   Data   RO          329    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x1fffe000, Size: 0x00000450, Max: 0x00002000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1fffe000   0x0000000c   Data   RW            4    .data               system_mk20d5.o
+    0x1fffe00c   0x00000008   Data   RW          135    .data               systick.o
+    0x1fffe014   0x00000004   Data   RW          221    .data               pit.o
+    0x1fffe018   0x00000004   Data   RW          250    .data               main.o
+    0x1fffe01c   0x00000010   Data   RW          280    .data               kinetis_it.o
+    0x1fffe02c   0x00000014   Zero   RW           96    .bss                gpio.o
+    0x1fffe040   0x00000010   Zero   RW          219    .bss                pit.o
+    0x1fffe050   0x00000400   Zero   RW           49    STACK               startup_mk20d5.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       456         38          0          0          0      23835   exti.o
+       844         36          0          0          0       3272   ftm.o
+      1484         88         65          0         20      29948   gpio.o
+       268         54          0         16          0       1264   kinetis_it.o
+       368         36          0          4          0        925   main.o
+       416         34          4          4         16      25565   pit.o
+        52         24       1024          0       1024        932   startup_mk20d5.o
+       552         46          0         12          0     150167   system_mk20d5.o
+       300         30          0          8          0      26023   systick.o
+
+    ----------------------------------------------------------------------
+      4740        386       1128         44       1060     261931   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         0          0          3          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+
+    ----------------------------------------------------------------------
+        88         16          0          0          0         68   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+        86         16          0          0          0         68   mc_w.l
+
+    ----------------------------------------------------------------------
+        88         16          0          0          0         68   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      4828        402       1128         44       1060     261375   Grand Totals
+      4828        402       1128         44       1060     261375   ELF Image Totals
+      4828        402       1128         44          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 5956 (   5.82kB)
+    Total RW  Size (RW Data + ZI Data)              1104 (   1.08kB)
+    Total ROM Size (Code + RO Data + RW Data)       6000 (   5.86kB)
+
+==============================================================================
+
