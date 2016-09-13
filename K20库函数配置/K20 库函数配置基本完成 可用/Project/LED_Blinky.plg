@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\飞思卡尔\K20系列\K20-EK开发板Rev1.0光盘资料\杭州安米电子K20-EK开发板演示例程\实验1 LED灯闪烁\Project\LED_Blinky.uvproj
+Project File Date:  01/11/2013
+
+<h2>Output:</h2>
+Build target 'LED_Blinky'
+compiling system_MK20D5.c...
+assembling startup_MK20D5.s...
+compiling uart.c...
+compiling gpio.c...
+compiling systick.c...
+compiling main.c...
+compiling kinetis_it.c...
+linking...
+Program Size: Code=1884 RO-data=1212 RW-data=24 ZI-data=1024  
+FromELF: creating hex file...
+".\obj\LED_Blinky.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED_Blinky'
+compiling main.c...
+linking...
+Program Size: Code=1860 RO-data=1212 RW-data=24 ZI-data=1024  
+FromELF: creating hex file...
+".\obj\LED_Blinky.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED_Blinky'
+linking...
+Program Size: Code=1860 RO-data=1212 RW-data=24 ZI-data=1024  
+FromELF: creating hex file...
+".\obj\LED_Blinky.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED_Blinky'
+linking...
+Program Size: Code=1860 RO-data=1212 RW-data=24 ZI-data=1024  
+FromELF: creating hex file...
+".\obj\LED_Blinky.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\飞思卡尔\\K20系列\\K20-EK开发板Rev1.0光盘资料\\杭州安米电子K20-EK开发板演示例程\\实验1 LED灯闪烁\\Project\\obj\\LED_Blinky.AXF" 
+* JLink Info: Device "MK20DN64XXX5" selected (64 KB flash, 16 KB RAM).
+Set JLink Project File to "D:\飞思卡尔\K20系列\K20-EK开发板Rev1.0光盘资料\杭州安米电子K20-EK开发板演示例程\实验1 LED灯闪烁\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.40b, compiled Dec 22 2011 10:54:45
+Firmware: J-Link ARM V8 compiled Jul 20 2012 16:33:52
+Hardware: V8.00
+S/N : 805306163 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+Found SWD-DP with ID 0x2BA01477
+Unlocking device...
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ 
+Target info:
+------------
+Device: MK20DN64xxx5
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+Application running ...
+Build target 'LED_Blinky'
+linking...
+Program Size: Code=1860 RO-data=1212 RW-data=24 ZI-data=1024  
+FromELF: creating hex file...
+".\obj\LED_Blinky.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED_Blinky'
+linking...
+Program Size: Code=1860 RO-data=1212 RW-data=24 ZI-data=1024  
+FromELF: creating hex file...
+".\obj\LED_Blinky.axf" - 0 Error(s), 0 Warning(s).
