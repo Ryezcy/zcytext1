@@ -1,0 +1,111 @@
+Dependencies for Project 'Button_Detect', Target 'Button_Detect': (DO NOT MODIFY !)
+F (..\Startup\system_MK20D5.c)(0x50F7C81A)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS -I..\Drivers -I..\Startup -I..\Users-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\system_mk20d5.o --omf_browse .\obj\system_mk20d5.crf --depend .\obj\system_mk20d5.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\core_cm4.h)(0x50F7C81A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C7B54A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Startup\system_MK20D5.h)(0x50F7C81A)
+F (..\Startup\startup_MK20D5.s)(0x50F7C81A)(--cpu Cortex-M4 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis--list .\list\startup_mk20d5.lst --xref -o .\obj\startup_mk20d5.o --depend .\obj\startup_mk20d5.d)
+F (..\Drivers\uart.c)(0x50F7C81B)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS -I..\Drivers -I..\Startup -I..\Users-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\uart.o --omf_browse .\obj\uart.crf --depend .\obj\uart.d)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\uart.h)(0x50F7C81B)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\core_cm4.h)(0x50F7C81A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C7B54A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Startup\system_MK20D5.h)(0x50F7C81A)
+F (..\Drivers\gpio.c)(0x57C8299B)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS -I..\Drivers -I..\Startup -I..\Users-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\gpio.o --omf_browse .\obj\gpio.crf --depend .\obj\gpio.d)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\gpio.h)(0x57C8299B)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\core_cm4.h)(0x50F7C81A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C7B54A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Startup\system_MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\common.h)(0x57C7D583)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\systick.h)(0x57CA90C9)
+F (..\Drivers\systick.c)(0x57CA90C9)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS -I..\Drivers -I..\Startup -I..\Users-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\systick.o --omf_browse .\obj\systick.crf --depend .\obj\systick.d)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\systick.h)(0x57CA90C9)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\core_cm4.h)(0x50F7C81A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C7B54A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Startup\system_MK20D5.h)(0x50F7C81A)
+F (..\Drivers\exti.c)(0x57C64C48)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS -I..\Drivers -I..\Startup -I..\Users-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\exti.o --omf_browse .\obj\exti.crf --depend .\obj\exti.d)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\exti.h)(0x57CACD09)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\common.h)(0x57C7D583)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\gpio.h)(0x57C8299B)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\core_cm4.h)(0x50F7C81A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C7B54A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Startup\system_MK20D5.h)(0x50F7C81A)
+F (..\Drivers\FTM.c)(0x57C64C16)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS -I..\Drivers -I..\Startup -I..\Users-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\ftm.o --omf_browse .\obj\ftm.crf --depend .\obj\ftm.d)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\FTM.h)(0x57BCFD61)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\common.h)(0x57C7D583)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\core_cm4.h)(0x50F7C81A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C7B54A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Startup\system_MK20D5.h)(0x50F7C81A)
+F (..\Drivers\pit.c)(0x57C56214)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS -I..\Drivers -I..\Startup -I..\Users-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\pit.o --omf_browse .\obj\pit.crf --depend .\obj\pit.d)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\pit.h)(0x57C56240)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\common.h)(0x57C7D583)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\core_cm4.h)(0x50F7C81A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C7B54A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Startup\system_MK20D5.h)(0x50F7C81A)
+F (..\Users\main.c)(0x57D221BB)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS -I..\Drivers -I..\Startup -I..\Users-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\core_cm4.h)(0x50F7C81A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C7B54A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Startup\system_MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\gpio.h)(0x57C8299B)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\common.h)(0x57C7D583)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\FTM.h)(0x57BCFD61)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\systick.h)(0x57CA90C9)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\uart.h)(0x50F7C81B)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\exti.h)(0x57CACD09)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\pit.h)(0x57C56240)
+F (..\Users\kinetis_it.c)(0x57D0186F)(-c --cpu Cortex-M4 -D__MICROLIB -g -O0 --apcs=interwork -I..\CMSIS -I..\Drivers -I..\Startup -I..\Users-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\kinetis_it.o --omf_browse .\obj\kinetis_it.crf --depend .\obj\kinetis_it.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Users\Kinetis_it.h)(0x57CAD16B)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\CMSIS\core_cm4.h)(0x50F7C81A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C7B54A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Startup\system_MK20D5.h)(0x50F7C81A)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\systick.h)(0x57CA90C9)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\gpio.h)(0x57C8299B)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\common.h)(0x57C7D583)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\FTM.h)(0x57BCFD61)
+I (C:\Users\zcy\Desktop\电动起落架 未调参 可实现功能 - 副本\Drivers\pit.h)(0x57C56240)
+F (..\read me.txt)(0x5105E6EB)()
