@@ -886,10 +886,9 @@ ARM Macro Assembler    Page 14
               00000000 
               00000000 
 Command Line: --debug --xref --cpu=Cortex-M4 --apcs=interwork --depend=.\obj\st
-artup_mk20d5.d -o.\obj\startup_mk20d5.o -I"D:\keil\keil package\ARM\RV31\INC" -
-I"D:\keil\keil package\ARM\CMSIS\Include" -I"D:\keil\keil package\ARM\Inc\Frees
-cale\Kinetis" --predefine="__MICROLIB SETA 1" --list=.\list\startup_mk20d5.lst 
-..\Startup\startup_MK20D5.s
+artup_mk20d5.d -o.\obj\startup_mk20d5.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CM
+SIS\Include -IC:\Keil\ARM\Inc\Freescale\Kinetis --predefine="__MICROLIB SETA 1"
+ --list=.\list\startup_mk20d5.lst ..\Startup\startup_MK20D5.s
 
 
 
