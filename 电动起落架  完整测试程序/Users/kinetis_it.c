@@ -7,12 +7,11 @@
 #include "gpio.h"
 #include "FTM.h"
 #include "pit.h"
-
+#include "adc.h"
 
 int a_start;
 int a_end;
 int a_value;
-
 int trig_1;
 
 void SysTick_Handler(void)
@@ -45,16 +44,17 @@ void PORTB_IRQHandler(void)
 	{
 		;
 	}
-	while(a_value>48000&&a_value<49000)
+	while(a_value>48000&&a_value<59000)
 	{
 		trig_1=1;
 		break;
 	}
-	while(a_value>96000&&a_value<97000)
+	while(a_value>90000&&a_value<97000)
 	{
 		trig_1=2;
 		break;
 	}
+	
 		PORTB->ISFR |= PORT_ISFR_ISF_MASK;          //清除中断标志
 }
 

@@ -1,0 +1,6 @@
+obj
+list
+*.bak
+*.dep
+Project
+/Button_Detect_Button_Detect.dep
